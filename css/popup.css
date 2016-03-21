@@ -1,0 +1,91 @@
+body, section {			/* Change width and height to own preferences */
+    width: 460px;
+    height: auto;
+
+    overflow-x: hidden;
+    /*padding: 2px;*/
+}
+
+li{
+
+
+    overflow: hidden;
+    list-style-type: none;
+
+    border: solid 1px #dddddd;
+    line-height: 30px;
+    padding: 10px;
+    margin-right: 2px;
+    height: 45px;
+
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+
+    background-color: #ffffff;
+    border-radius: 3px;
+
+}
+
+.top-li{
+
+    background-color: #33B5A8;
+    height: 30px !important;
+
+}
+
+li > img{
+
+    padding-right: 10px;
+    max-height : 40px !important;
+    min-height : 40px !important;
+    min-width : 40px !important;
+    max-width : 40px !important;
+    width: auto;
+
+
+}
+
+a {
+    color: #000000 !important;
+    text-decoration: none;
+    max-lines: 1;
+}
+
+
+
+.title-text{
+
+    max-width: 200px;
+    overflow: hidden;
+    max-lines: 1;
+    white-space:nowrap;
+    max-height: 20px;
+    -webkit-line-clamp: 1;
+
+
+}
+
+.container{
+
+    margin-top: 2px;
+    background-color: #EEEEEE;
+
+}
+
+ul{
+
+    margin-left: 2px !important;
+
+}
+
+.logo{
+
+    width: 153px !important;
+    min-height: 25px !important;
+    height: 25px !important;
+    max-width: 300px !important;
+    max-height: 25px !important;
+    margin-left: 10px;
+
+}
+

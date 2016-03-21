@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html ng-app="SaveMe" ng-csp>
+<head>
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/lib/jquery-1.8.2.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+
+    <script src="js/app/app.js"></script>
+    <script src="js/app/popup.js"></script>
+
+
+
+</head>
+<body class="popup">
+
+<div ng-controller="PageController">
+
+    <div class="container">
+
+        <section>
+
+            <ul>
+
+             <li class="top-li">
+
+
+                <span></span>
+
+
+                <img class="logo" src="http://saveme.ie/modules/core/client/img/logo.png"
+                     alt="{{saving.user.username}}"/>
+
+
+                <!--<a class="i18n title"><span class="shortcut"></span><span class="title-text">{{saving.title}}</span>-->
+                    <!--<b>(€{{saving.price}})</b></a> </br>-->
+
+
+                <span></span>
+
+
+
+
+
+            </li>
+
+            <div ng-repeat="saving in savings | limitTo:30 | orderBy : '-created'">
+
+                <li>
+
+
+                    <span></span>
+
+
+                    <img ng-src="{{saving.urlimage}}" class="small-profile-image-thumbnail"
+                         alt="{{saving.user.username}}"/>
+
+                    <a href="http://www.saveme.ie/savings/{{saving._id}}" target="_blank" class="i18n title"><span class="shortcut"></span><span class="title-text">{{saving.title}}</span>
+                        <b>(€{{saving.price}})</b></a> </br>
+
+
+                    <span></span>
+
+
+
+
+
+                </li>
+
+            </div>
+
+            </ul>
+
+        </section>
+
+
+    </div>
+
+
+</div>
+</body>
+</html>
